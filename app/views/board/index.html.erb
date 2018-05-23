@@ -1,0 +1,10 @@
+<h1>인덱스</h1>
+<a href = "/board/new">글쓰기</a><br>
+
+<% @list_p.each do |p| %>
+    id : <%= p.id %><br>
+    <a href = "/board/show/<%= p.id %>">제목 : <%= p.title %></a><br>
+    작성자 : <%= p.editor %><br>
+    <hr>
+<% end %>
+    
