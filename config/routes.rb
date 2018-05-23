@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  post 'comment/reply_create'
+  
+  get 'comment/reply_delete/:rd_id' => 'comment#reply_delete'
+
   root 'board#index'
   
   get 'board/index'
